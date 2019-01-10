@@ -8,11 +8,35 @@
     <mat-card-header>
         <mat-icon mat-card-avatar>lock</mat-icon>
         <mat-card-title>Private</mat-card-title>
-        <mat-card-subtitle>This is the information on your user
-            that is stored in the Amazon Cognito User Pool</mat-card-subtitle>
+        <mat-card-subtitle>This is a private part of the website, which shows the information on your user as stored in the Amazon Cognito User Pool (the authentication back-end we use powered by AWS).</mat-card-subtitle>
     </mat-card-header>
 
+    <mat-card-content fxLayout="row">
+        <mat-card-subtitle>Select one or more causes.</mat-card-subtitle>
+    </mat-card-content>
+
+
+    <!-- <mat-card-content fxLayout="row"> -->
+        <mat-grid-list cols="2" rowHeight="2.5:1">
+          <mat-grid-tile>
+            <img mat-card-image src="https://www.comicrelief.com/sites/default/files/styles/cr_1170_x_566/public/2018-04/Children_1.jpg?h=687304ad&itok=uiA9TBH9" alt="Theme"/>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img mat-card-image src="https://www.comicrelief.com/sites/default/files/styles/cr_1170_x_566/public/2017-07/cr_issue_mental_health_v2_1.jpg?h=0cdd8849&itok=-bSXWpQq" alt="Theme"/>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img mat-card-image src="https://www.comicrelief.com/sites/default/files/styles/cr_1170_x_566/public/2018-04/cr_pr_women_girls_header_v2.jpg?h=05304a82&itok=4Lj3u3cu" alt="Theme"/>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <img mat-card-image src="https://www.comicrelief.com/sites/default/files/styles/cr_1170_x_566/public/2018-04/CR_PR_communities_header_v1.jpg?h=a98bae2b&itok=c-zSMQoV" alt="Theme"/>
+          </mat-grid-tile>
+        </mat-grid-list>
+    <!-- </mat-card-content> -->
+
+    <br/>
+
     <mat-card-content>
+        <mat-card-subtitle>The below is a replay of your private user information</mat-card-subtitle>
         <form [formGroup]="userDetailsForm" fxLayout="column">
             <div *ngFor="let detail of (userDetails | async)" fxLayout="row">
                 <mat-form-field fxFlex>

@@ -23,6 +23,7 @@ import {
   MatInputModule,
   MatProgressSpinnerModule,
   MatIconModule,
+  MatGridListModule,
 } from '@angular/material';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -33,6 +34,7 @@ const MAT_MODULES = [
   MatInputModule,
   MatProgressSpinnerModule,
   MatIconModule,
+  MatGridListModule,
 ];
 @NgModule({
   declarations: [

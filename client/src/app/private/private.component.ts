@@ -6,6 +6,9 @@ import { AuthService } from '../auth.service';
 import { BehaviorSubject } from 'rxjs';
 import { FormGroup, FormControl } from '@angular/forms';
 
+// import {Component} from '@angular/core';
+
+
 @Component({
   selector: 'app-private',
   templateUrl: './private.component.html',
